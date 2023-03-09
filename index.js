@@ -12,7 +12,7 @@ dotenv.config();
 
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    origin: "https://url-shortner-reactt.netlify.app",
     credentials: true,
   })
 );
