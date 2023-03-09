@@ -61,7 +61,7 @@ router.post("/signin", async function (request, response) {
           if (isValidUser) {
             const token = await jwt.sign(
               { _id: existingUser._id },
-              process.env.SECRET_KEY
+              "secretkeykalai"
             ); // generating token using userId and secret key.
 
             response.cookie("accessToken", token, {
